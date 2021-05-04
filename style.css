@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.clip-container {
+    width: 100%; 
+    margin: 0.5rem;
+    display: grid;
+    gap: 1rem; 
+    grid-template-columns: repeat( auto-fit, minmax(300px, auto) );
+    grid-template-rows: repeat( auto-fit, minmax(256px, 256px) );
+    justify-content: center;
+}
+
+.clip-card {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(8, 32px);
+}
+
+.clip-img {
+    grid-column: span 1;
+    grid-row: span 5;
+}
+
+.clip-img img 
+{   
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.clip-info {
+    grid-column: span 1;
+    grid-row: span 3;
+    display: flex;
+    font-size: 12px;
+    height: 100%;
+}
+
+.clip-icon {
+    border-radius: 50%; 
+    height: 32px;
+    width: 32px;
+    object-fit: cover;
+    margin: 0.3rem;
+}
+
+.clip-info section {
+    margin-top: 0.5rem;
+}
+
